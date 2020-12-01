@@ -67,7 +67,8 @@ nav {
     flex-direction: column;
     justify-content: end;
     align-items: center;
-    min-height: 70vh;
+    height: 70vh;
+    min-height: 500px;
     min-width: 60vw;
     color: black;
     text-align: center;
@@ -78,12 +79,15 @@ nav {
 }
 
 #home > h1 {
-    padding-bottom: 3.5vh;
+    padding: 0 7vw 3.5vh 7vw;
+    font-size: calc(24px + 2vw);
 }
 
 #home > p {
     padding: 0 20%;
     padding-bottom: 3.5vh;
+    font-size: calc(16px + 0.5vw);
+    width: 45%;
 }
 
 .home-button {
@@ -271,13 +275,21 @@ nav {
 .social-media {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: flex-start;
-    width: 50%;
+    width: 30%;
 }
 
 .sm-logo{
-    width: calc(10px + 2vw);
+    width: calc(10px + 40%);
+    min-width: 32px;
+    transition: 0.2s;
+}
+
+.sm-logo:hover {
+    transform: scale(1.03);
+    -moz-transform: scale(1.1);
+
 }
 
 .footer-newsletter {
@@ -289,13 +301,19 @@ nav {
     padding: 7vh 0;
 }
 
+#newsletter-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
 #newsletter-form > * {
     padding: calc(5px + 0.25vh) 0;
     border-radius: 5px;
 }
 
 #newsletter-form > input {
-    margin-right: 2vw;
+    margin-right: min(30px, 2vw);
 }
 
 #newsletter-form > button {
@@ -309,11 +327,29 @@ nav {
 /* RESPONSIVIDADE */
 
 @media screen and (max-width: 600px) {
+
+    #home > h1 {
+        font-size: calc(10px + 4vw);
+    }
+
+    #home > p {
+        width: 80vw;
+        font-size: calc(10px + 1vw);
+        margin: 0 10vw;
+    }
+
     #info {
         flex-direction: column;
         justify-content: space-around;
+        min-height: 60vh;
         align-items: center;
     }
+
+    .info-content > h2 {
+        font-size: calc(20px + 10vw);
+    }
+
+
     .grow-together-content {
         flex-direction: column;
         justify-content: center;
@@ -375,5 +411,55 @@ nav {
     .your-users-content > .section-illustration {
         grid-row: 2;
         grid-column: 1;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-gap: 15vh;
+    }
+
+    .footer-social {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .social-media {
+        width: 50%;
+    }
+
+    .footer-logo {
+        width: 60vw;
+        min-width: 200px;
+    }
+
+    .footer-newsletter {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .footer-newsletter > p {
+        padding: 5vh 0;
+    }
+
+    #newsletter-form {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+    #newsletter-form > input {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    #newsletter-form > button {
+        width: 45vw;
+        margin-top: 3vh;
+        font-size: calc(10px + 1.5vw);
+        font-weight: bold;
+    }
+
+    #newsletter-form > * {
+        padding: 3vh 0;
     }
 }

@@ -1,0 +1,44 @@
+PAGE TITLE:  Huddle landing page with curved sections
+
+Navbar:
+    - Button: Try it free
+
+Home:
+    - h1:  Build The Community Your Fans Will Love
+    - p: Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.
+    - button: Get Started For Free
+
+Info:
+    - info-content(1):
+        - h2: 1.4k+
+        - p: Communites Formed
+
+    - info-content(2):
+        - h2: 2.7m+
+        - p: Messages Sent
+
+Grow together:
+    - h3: Grow Together
+    - p: Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out and on with a feedback form.
+
+Flowing Conversation: 
+    - h3: Flowing Conversations
+    - p: You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.
+
+Your users:
+    - h3: Your Users
+    - p: It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.
+
+Ready: 
+    - h2:  Ready To Build Your Community?
+    - button:  Get Started For Free
+
+.footer-social:
+    - p: Lorem20
+    - .contact span(1) p: Phone:+1-543-123-4567
+    - .contact span(2) p: example@huddle.com
+
+.footer-newsletter:
+    - h3: NEWSLETTER
+    - p: Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, deserunt! A necessitatibus voluptatum tenetur fugit nobis iusto libero adipisci error.
+    - #newsletter-form button: Subscribe
